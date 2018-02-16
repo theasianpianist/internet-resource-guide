@@ -32,18 +32,46 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#lit">Literature</a>
+              <div class="dropdown">
+                <a class="nav-link js-scroll-trigger" href="#whatis">What is this?</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#problem">Problem Solving</a>
+              <div class="dropdown">
+                <a class="nav-link js-scroll-trigger" href="#lit">Literature</a>
+                <div class="dropdown-content">
+                  <a href="#acm">ACM Digital Library</a>
+                  <a href="#tcj">The Computer Journal</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#practice">Practice</a>
+              <div class="dropdown">
+                <a class="nav-link js-scroll-trigger" href="#communities">Communities</a>
+                <div class="dropdown-content">
+                  <a href="#stack">StackOverflow</a>
+                  <a href="#reddit">/r/Programming</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
+              <div class="dropdown">
+                <a class="nav-link js-scroll-trigger" href="#practice">Practice</a>
+                <div class="dropdown-content">
+                  <a href="#hacker">HackerRank</a>
+                  <a href="#leet">LeetCode</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
+                <div class="dropdown-content">
+                  <a href="#instagram">Instagram Engineering Blog</a>
+                  <a href="#horror">Coding Horror</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -57,26 +85,194 @@
       </div>
     </header>
 
-    <section id="lit">
+    <section id="whatis">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Selected Literature</h2>
-            <p class="lead">Reading is perhaps the best way to stay up to date.</p>
-            <p>The ACM (Association of Computing Machinery) is the most prestigious organization within the field of computer science. The ACM maintains a digital library in which its members compile journal publications, conference proceedings, and much more.</p>
-            <p>Talk about the Journal of Computer Science</p>
-            <p>Talk about some other stuff</p>
+            <h1 class="text-center">What is this guide?</h1>
+            <div>
+              <div id="group">
+
+                <p class="text-center">
+                  <a class="btn btn-primary" data-parent="#group" data-toggle="collapse" href="#collapseOneOne" role="button" aria-expanded="false">
+                    What's in the guide?
+                  </a>
+
+                  <a class="btn btn-primary" data-parent="#group" data-toggle="collapse" href="#collapseOneTwo" role="button" aria-expanded="false">
+                    Who is this for?
+                  </a>
+                  <a class="btn btn-primary" data-parent="#group" data-toggle="collapse" href="#collapseOneFour" role="button" aria-expanded="false">
+                    Organization
+                  </a>
+                  <a class="btn btn-primary" data-parent="#group" data-toggle="collapse" href="#collapseOneThree" role="button" aria-expanded="false">
+                    Tips for use
+                  </a>
+                </p>
+                <div class="accordion-group">
+                  <div class="collapse multi-collapse" id="collapseOneOne">
+                    <div class="card card-body">
+                      <h2>What's in this guide?</h2>
+                      <p>
+                        This guide is a carefully curated compilation of internet resources relating to computer science and software development. Several sources for recommended reading are listed under 'Literature' including books, periodicals, and research publications.
+                        'Online Communities' contains several sites where software developers can read and talk about many aspects of software development. For those looking to brush up on their practical skills, 'Practice' contains links to several resources which
+                        allows anyone from aspiring programmers to industry-hardened veterans to brush up on their practical skills. Finally, the 'Blogs' sections recommends various blogs from notable developers and software companies to help readers learn about the software
+                        development industry, a proper developer mindset, and common problem solving strategies.
+                      </p>
+                      <p>
+                        <a data-parent="#group" data-toggle="collapse" href="#collapseOneOne" role="button" aria-expanded="false">
+                          close
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse multi-collapse" id="collapseOneTwo">
+                    <div class="card card-body">
+                      <h2>Who is this for?</h2>
+                      <p>
+                      This guide is intended for computer science majors who are either current students or recent graduates. The resources included here are meant to assist readers in learning more about various aspects of computer science. Students and recent graduates will
+                      find these resources helpful in learning about the technology industry, software development practices, and new research in computer science.
+                      </p>
+                      <p>
+                        <a data-parent="#group" data-toggle="collapse" href="#collapseOneTwo" role="button" aria-expanded="false">
+                          close
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse multi-collapse" id="collapseOneFour">
+                    <div class="card card-body">
+                      <h2>Organization</h2>
+                      <p>
+                        This guide is broken down into 5 main sections: the help section you're reading right now, and four other informational sections (click on the "What's in this guide?" button to read more about them). At the top of the site you'll find a navigation bar
+                        which contains links to the 5 main sections - mousing over each link will reveal links to specific resources within each section.
+                      </p>
+                      <p>
+                        Each resource has a short description of the resource and why you might find it helpful. Underneath that you'll find a list of tips for how to effectively use that resource.
+                      </p>
+                      <p>
+                        <a data-parent="#group" data-toggle="collapse" href="#collapseOneFour" role="button" aria-expanded="false">
+                          close
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse multi-collapse" id="collapseOneThree">
+                    <div class="card card-body">
+                      <h2>Tips for use:</h2>
+                      <ul>
+                        <li>
+                          Use the navigation bar at the top of the page to get around. The bar includes the four categories of resources included in this guide as well as a link back to this help section.
+                        </li>
+                        <li>
+                          This guide is not designed to be read/used in order. Feel free to jump around and visit links that are relevant to what you're interested in, and come back later when you want to explore something else.
+                        </li>
+                        <li>
+                          A strong theoretical background in computer science goes a long way in the software development industry, but a solid foundation in practical programming is arguable more useful. Use this guide in conjuction with a formal computer science education
+                          for the best results. Your formal education will give a solid grasp of the theory behind computer science, and this guide will help you stay on top of your practical programming skills and new research in the field.
+                        </li>
+                      </ul>
+                      <p>
+                        <a data-parent="#group" data-toggle="collapse" href="#collapseOneThree" role="button" aria-expanded="false">
+                          close
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="problem">
+    <section id="lit">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Problem Solving Resources</h2>
-            <p class="lead">You're bound to run into some problems at some point in your career. Here's where you can find some answers.</p>
+            <h2>Selected Literature</h2>
+            <h4 id="acm"><a href="https://dl.acm.org/">The ACM Digital Library</a></h4>
+            <p>
+              The Association of Computing Machinery (ACM) is the premiere professional computer science professional organization. ACM gathers members from education, research, and industry to discuss the latest advances in computer science. The ACM Digital Library is a compilation of numerous resources in the field of computer science from research being published in journals to books published by researchers on the forefront of technology. Visitors from the site can benefit by learning about the latest advancements in computer science and reading about the newest research papers being published.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Need to save on travel costs? The ACM Digital Library has written proceedings from most major computer science-related conferences. If you can’t attend in person, make sure to read through the summary of the conferences posted on the Digital Library to stay up to date.
+                </li>
+                <li>
+                  Looking for something specific? Start your search with the ACM Digital Library, perhaps the single largest compilation of computer science research materials ever gathered. If you’re looking for a research paper on computational theory or a keynote presentation about quantum computing, chances are the ACM Digital Library has what you’re looking for.
+                </li>
+              </ul>
+            </p>
+            <h4 id="tcj"><a href="https://academic.oup.com/comjnl">The Computer Journal</a></h4>
+            <p>
+              The Computer Journal is a longstanding journal published by Oxford University Press which covers nearly all aspects of computer science from theory to practical applications. Papers and articles published in the journal cover various aspects of research in computer science. The Computer Journal archives contain copies of every article published dating all the way back to the very first issue in 1958. The archives are indexed and easily searchable and all the articles are free to view in their entirety. The archives make The Computer Journal a fantastic resource for exploring how computer science research has evolved through the decades.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Seeking inspiration for your research? The Computer Journal covers a wide swath of computer science, and the latest research from the major areas can usually be found within. Browse through recent issues to see what topics and areas are popular in computer science right now. You could also read through recent papers to look for any questions that current research couldn’t answer, and aim to answer them in your own research.
+                </li>
+                <li>
+                  In over your head? Read the abstracts! Research papers are often dry and difficult to understand, particularly if you lack the requisite background knowledge in the area of study. All research papers published in The Computer Journal (and pretty much every other research journal) contain an abstract, which is a brief summary of the research question and the results obtained. Reading through this summary is much less daunting than parsing the entirety of the paper.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="communities">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Online Communities</h2>
+            <h4 id="stack"><a href="https://www.stackoverflow.com">StackOverflow</a></h4>
+            <p>
+              StackOverflow is an online forum designed for programmers which contains programming/software development questions posted by members and answers posted and curated by the community. The main page of the website features new issues being encountered by programmers. Clicking on a question title will display the entire question as well as any suggested solutions and associated comments. Registered users will have the opportunity to provide an answer of their own or post a comment on either the original post or a suggested answer. Registered users also can post a new question for others to answer.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Search carefully before you post a new question. Sometimes your exact issue has already been asked and answered on the site, you may just have to adjust your search query a little bit to find it. This is also good practice for using Google - if you don’t find what you’re looking for at first, change how you’re searching. Eventually, you’ll learn how to search effectively on the first try.
+                </li>
+                <li>
+                  If you do post a new question, give as much detail as possible. StackOverflow suggests that you include a minimal, complete, verifiable example (MCVE). This means including part of the code that you’re trying to write, stripping out any irrelevant portions (minimal), including all information necessary to recreate the problem (complete), and ensuring that the code you provide will faithfully recreate the example (verifiable). Having an MCVE will increase the likelihood of another user being able to solve your issue.
+                </li>
+                <li>
+                  When interacting with other users, remain polite and cordial. When you’re frustrated with an error, it’s easy to become rude and short when interacting with others, especially over the internet. Keep in mind that other users are complete strangers who have no obligation to help you - any assistance they do provide is on their own time and of their own free will, and they will be less inclined to help someone who is rude.
+                </li>
+                <li>
+                  Don’t just read answers to your own questions. Spend some time looking through questions posted by other users - answers on StackOverflow are often incredibly informative and detailed and much can be learned simply by browsing.
+                </li>
+              </ul>
+            </p>
+            <h4 id="reddit"><a href="https://www.reddit.com/r/programming">/r/Programming</a></h4>
+            <p>
+              Reddit is a content aggregation site where users post images, text, and links to other websites. The programming ‘subreddit’ is the subsection of the website dedicated to programming and software development. Links posted to the subreddit cover various topics including best practices in industry, news regarding new developer tools, interesting personal projects and occasionally obscure trivia about software development. This subreddit is a valuable resources simply because it provides a fairly accurate representation of the modern software development industry.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Search carefully before you post a new question. Sometimes your exact issue has already been asked and answered on the site, you may just have to adjust your search query a little bit to find it. This is also good practice for using Google - if you don’t find what you’re looking for at first, change how you’re searching. Eventually, you’ll learn how to search effectively on the first try.
+                </li>
+                <li>
+                  If you do post a new question, give as much detail as possible. StackOverflow suggests that you include a minimal, complete, verifiable example (MCVE). This means including part of the code that you’re trying to write, stripping out any irrelevant portions (minimal), including all information necessary to recreate the problem (complete), and ensuring that the code you provide will faithfully recreate the example (verifiable). Having an MCVE will increase the likelihood of another user being able to solve your issue.
+                </li>
+                <li>
+                  When interacting with other users, remain polite and cordial. When you’re frustrated with an error, it’s easy to become rude and short when interacting with others, especially over the internet. Keep in mind that other users are complete strangers who have no obligation to help you - any assistance they do provide is on their own time and of their own free will, and they will be less inclined to help someone who is rude.
+                </li>
+                <li>
+                  Don’t just read answers to your own questions. Spend some time looking through questions posted by other users - answers on StackOverflow are often incredibly informative and detailed and much can be learned simply by browsing.
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -87,7 +283,42 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Practicing Programming</h2>
-            <p class="lead">Here are some tips and tools on keeping your programming skills sharp.</p>
+            <h4 id="hacker"><a href="https://www.hackerrank.com">HackerRank</a></h4>
+            <p>
+              HackerRank is a website designed to help software developers brush up on their programming skills and prepare for technical interviews. It contains numerous programming challenges sorted into different categories that users can complete to improve their programming skills. After registering and signing in, the main page allows you to navigate to various categories of programming challenges including algorithms, data structures, string manipulation, databases. You can also complete challenges in a specific programming language depending on what you want to practice. Software developers benefit by having an easy, trackable method to improve their programming skills and practice for technical interviews.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Come early and come often. In software development, if you’re not constantly brushing up your skills then you’re falling behind. Solving even one problem a day can help you stay up to speed with other developers in industry. Visiting this site often will significantly improve your programming ability over time.
+                </li>
+                <li>
+                  Practice specificity. Visiting HackerRank for general programming practice is great. However, HackerRank also comes in handy when practicing for more specific use cases. There’s a technical interview category which contains questions similar to those typically asked during a technical interview at a software company. If you’re looking to learn a new programming language, HackerRank also has language specific categories - it’s often said that the best way to learn a new language is to use it, and this mantra applies to programming languages as well.
+                </li>
+                <li>
+                  Challenge yourself. It can be tempting to only answer easy questions to rack up progress points on your profile. However, the whole point of HackerRank is to learn more and get better, not just stagnate and stay in the same place. If you’ve advanced to the point where easy questions are a breeze for you, move on to mediums, and then to hards once you’ve mastered the mediums.
+                </li>
+              </ul>
+            </p>
+            <h4 id="leet"><a href="https://www.leetcode.com">LeetCode</a></h4>
+            <p>
+              Much like HackerRank, LeetCode is a website where you can solve programming questions to help you improve your problem solving skills. Unlike HackerRank, LeetCode is focused almost entirely on technical interview preparation, and even has lists of questions most likely to be asked by various software companies (the most popular lists include questions asked by Google, Facebook, and Microsoft interviewers). Because of this feature, LeetCode can give you a much better idea of what types of questions to expect in an interview.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Similar to HackerRank, it’s best if you spread your practice out over a long period of time rather than trying to cram it all in a day before your interview. Take your time with these questions, and practice often.
+                </li>
+                <li>
+                  No cheating! LeetCode questions usually have thoroughly explained solutions attached. Try to avoid peeking at these until you’ve really given the problem your best attempt. Looking at the solutions means you won’t really spend much time or effort thinking about how to solve the problem on your own, thus weakening your problem solving skills.
+                </li>
+                <li>
+                  Explore the system design category. System design questions are fairly common in technical interviews and are considered among the hardest type of question to answer. Luckily, LeetCode has an entire category of questions devoted to them (while other sites like HackerRank don’t). Be sure to take advantage of this and get as much practice in as you can before your interview.
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -98,7 +329,36 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Noteworthy Blogs</h2>
-            <p class="lead">It's always interesting to read about other people's adventures in computer science.</p>
+            <h4 id="instagram"><a href="https://engineering.instagram.com/">Instagram Engineering</a></h4>
+            <p>
+              The Instagram Engineering blog contains posts written about the various issues that software developers at Instagram encounter. Posts cover the various development domains used at Instagram including mobile and web development, data analytics, and infrastructure management. The anecdotes conveyed in these stories can provide valuable lessons to readers on how to approach problems that arise during software development.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  You are not Instagram. Keep that in mind. Instagram is used by 800 million users per month, and whatever project you’re working on is almost guaranteed to operate at a significantly smaller scale. While the developer blog can be a good source of inspiration for how to go about tackling a problem, it can be unwise to simply copy Instagram’s exact solution. Implementing Instagram’s solution may make sense when you’re operating at the same scale, but another solution might make more sense in a different situation.
+                </li>
+                <li>
+                  You have a lot to learn from Instagram. Keeping the previous tip in mind, sometimes it is appropriate to solve a problem in the same way that Instagram does. It’s important that you develop the ability to distinguish solutions that are only applicable to Instagram’s specific problem and solutions which can be applied to other situations. For example, the most recent post on the blog talks about optimizing Python’s garbage collection algorithm (for you non-programmers, they’re trying to squeeze every last drop of performance out of a process that has already been optimized). Hopefully it’s obvious that this solution won’t be applicable to most situations - until you start to approach Instagram’s scale, the default garbage collection algorithm is more than sufficient for most people’s needs.
+                </li>
+              </ul>
+            </p>
+            <h4 id="horror"><a href="https://blog.codinghorror.com/">Coding Horror</a></h4>
+            <p>
+              This is the personal blog of Jeff Atwood, one of the most prominent programmers in the modern software development industry; it contains blog posts that focus mostly on software development but occasionally branch out into other tech-related areas. Atwood co-founded StackOverflow (see above) and Discourse, a growing online discussion platform, and is a competent developer in general. As such, his thoughts and opinions are worth a read at the very least. The site is organized chronologically, like most other blogs. Simply scroll down to read older posts, or click on a post title to read and post comments. Anyone looking to work in software development can benefit by reading about Atwood’s experiences and learning about the various aspects of the software development industry.
+            </p>
+            <p>
+              Tips for use:
+              <ul>
+                <li>
+                  Read with an open mindset. Atwood has more than three decades of experience in the software development industry. Over the years, he’s acquired knowledge of best practices in the industry, useful tips and tricks for improving your workflow, and much more. One of the most important concepts that Atwood talks about in his posts is developing a proper developer mindset (though he never explicitly refers to it as such). This includes how to approach problems, how to ensure that best practices are actually implemented, etc. Atwood has vast stores of advice that trickle out into his blog posts, and everyone could benefit from learning something new.
+                </li>
+                <li>
+                  Take everything with a grain of salt. While Atwood is extremely qualified to write about programming and software development, keep in mind that he is just one person with one opinion. Don’t treat his word as gospel - if something that he says doesn’t quite make sense or if a suggestion he makes wouldn’t work well in your particular situation, do your own research and come to your own conclusion. Atwood writes good code and blog posts but that doesn’t make him omniscient.
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
